@@ -13,21 +13,19 @@
 	#header {
 	 	position: fixed;
 	 	top: -15px;
-	 	left: -15px;
-	  	background-color: white;
 	  	width: 80%;
-		padding-right: 10%;
-	  	border-radius: 0px 0px 20px 0px;
+		margin: auto 10%;
+		padding: auto 10%;
+	  	background-color: white;
+	  	border-radius: 0px 0px 20px 20px;
 		box-shadow: 15px 15px rgba(0,0,0,0.1);
-		display:flex;
-		justify-content: space-between;
+		z-index: 999;
 	}
 	
 	#logo {
 		background-color: #FF9696;
 		width: 350px;
 		height: 100px;
-		margin: 30px 20px 20px 70px;
 		align-self: center;
 		color: #ffcae0
 	}
@@ -36,21 +34,24 @@
 		display: flex;
 		flex-direction: rows;
 		justify-content: space-between;
-		width: 60%;
 	}
 	
 	.link {
-		background-color: #DBDBDB;
+		border-left: 3px solid #DBDBDB;
+		border-right: 3px solid #DBDBDB;
 		padding: 30px;
-		margin: auto 8%;
+		margin: auto;
 		width: 20%;
 		text-align: center;
 		font-size: 30px;
-		color:white;
+		color: #DBDBDB;
+		text-decoration: none;
 	}
 	
 	.link:hover {
-		background-color: #C0C0C0;
+		background-color: #DBDBDB;
+		color: white;
+		border-color: #cccccc;
 	}
 	
 	#bios {
@@ -69,6 +70,12 @@
 		flex-direction: column;
 		width: 40%;
 	}
+
+	.bio-image {
+		height: 400px;
+		background-color: white;
+		z-index: 3;
+	}
 	
 	.bio-name {
 		background-color: #DBDBDB;
@@ -77,11 +84,10 @@
 		line-height: 0px;
 		border-top: 3px solid #cccccc;
 		color: #3F3F3F;
-	}
-	
-	.bio-image {
-		height: 400px;
-		background-color: white;
+		animation-name: bios-name-animation;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		z-index: 2;
 	}
 	
 	.bio-description {
@@ -89,6 +95,10 @@
 		padding: 10px;
 		background-color: #cccccc;
 		color: #3F3F3F;
+		animation-name: bios-description-animation;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		z-index: 1;
 	}
 	
 	#footer {
@@ -107,13 +117,37 @@
 	}
 	
 	@keyframes bios-animation {
-		0%, 30% {
+		0%, 10% {
 			margin: 10% auto 0px;
 			opacity: 0;
 		}
 		
 		100% {
 			margin: 12% auto 0px;
+			opacity: 1;
+		}
+	}
+	
+	@keyframes bios-name-animation {
+		0%, 30% {
+			margin-top: -40px;
+			opacity: 0;
+		}
+		
+		100% {
+			margin-top: 0px;
+			opacity: 1;
+		}
+	}
+	
+	@keyframes bios-description-animation {
+		0%, 50% {
+			margin-top: -40px;
+			opacity: 0;
+		}
+		
+		100% {
+			margin-toptop: 0px;
 			opacity: 1;
 		}
 	}
@@ -126,19 +160,22 @@
 <body>
 	<div id="main">
 		<header id="header">
+
+
+			<nav id="navbar">
+				<a href=# class="link">
+					<p>link here</p>
+				</a>
+				
 				<div id="logo">
 					<p>logo here</p>
 				</div>
-
-			<nav id="navbar">
-				<div class="link">
+				
+				<a href=# class="link">
 					<p>link here</p>
-				</div>
-
-				<div class="link">
-					<p>link here</p>
-				</div>
+				</a>
 			</nav>
+			
 		</header>
 		
 		<div id="bios">
