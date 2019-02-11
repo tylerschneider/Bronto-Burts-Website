@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<title>Tyler Game Page</title>
+<title>Pocket Healer</title>
 <style>
 	body {
 	  	padding: 0px;
@@ -67,6 +67,24 @@
 		color: #ffcae0;
 	}
 	
+	#game-display {
+		display: flex;
+		width: 896px;
+		height: 504px;
+		border: 10px solid #DBDBDB;
+		border-radius: 10px;
+	}
+	
+	#game {
+		width: 916px;
+		display: block;
+		color: #3f3f3f;
+		margin: 10% auto 0px;
+		background-color: #ccc;
+		border-radius: 10px 10px 0px 0px;
+		padding-bottom: 10px;
+	}
+	
 </style></head>
 	
 
@@ -78,18 +96,29 @@
 
 
 			<nav id="navbar">
-				<a href="Game Page.html" class="link">
+				<a href="Tyler Game Page.html" class="link">
 					<p>Tyler's Game</p>
 				</a>
 				
-				<a href="Team Website.html" class="logo"><img class="logo" src="Logo.png" alt="Bronto Burts Logo"></a>
+				<a href="Team Website.html" class="logo"><img class="logo" src="images/Logo.png" alt="Bronto Burts Logo"></a>
 
-				<a href="Game Page.html" class="link">
+				<a href="Dylan Game Page.html" class="link">
 					<p>Dylan's Game</p>
 				</a>
 			</nav>
 			
 		</header>
+		
+		<div id="game">
+			<embed id="game-display" src="games/pocketHealer.swf" />
+			
+			<center>
+				<p>Tyler's game is a healing simulator. Use your abilities to heal your teammates while they take down bosses!</p>
+				<p>Pocket Healer was my first game. It's buggy and crashes every once and a while.</p>
+				<p>Have fun!</p>
+			</center>
+
+		</div>
 
 		<footer id="footer">
 			<p>©2019 Bronto Burts</p>
