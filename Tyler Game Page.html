@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Pocket Healer</title>
+<style>
+	body {
+	  	padding: 0px;
+	  	margin: 0px;  
+	  	background-color: #ffcae0;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	}
+
+	#header {
+	 	position: fixed;
+	 	top: -15px;
+	  	width: 80%;
+		margin: auto 10%;
+		padding: auto 10%;
+	  	background-color: white;
+	  	border-radius: 0px 0px 20px 20px;
+		box-shadow: 15px 15px rgba(0,0,0,0.1);
+		z-index: 999;
+	}
+	
+	.logo {
+		height: 100px;
+		align-self: center;
+		color: #ffcae0
+	}
+	
+	#navbar {
+		display: flex;
+		flex-direction: rows;
+		justify-content: space-between;
+	}
+	
+	.link {
+		border-left: 3px solid #DBDBDB;
+		border-right: 3px solid #DBDBDB;
+		padding: 30px;
+		margin: auto;
+		width: 20%;
+		text-align: center;
+		font-size: 30px;
+		color: #DBDBDB;
+		text-decoration: none;
+	}
+	
+	.link:hover {
+		background-color: #DBDBDB;
+		color: white;
+		border-color: #cccccc;
+	}
+	
+	#footer {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		height: 40px;
+		background-color: #FF9696;
+		text-align: center;
+		font-weight: bold;
+		bottom: 0px;
+		left: 0px;
+		color: #ffcae0;
+	}
+	
+	#game-display {
+		display: flex;
+		width: 896px;
+		height: 504px;
+		border: 10px solid #DBDBDB;
+		border-radius: 10px;
+	}
+	
+	#game {
+		width: 916px;
+		display: block;
+		color: #3f3f3f;
+		margin: 10% auto 0px;
+		background-color: #ccc;
+		border-radius: 10px 10px 0px 0px;
+		padding-bottom: 10px;
+	}
+	
+</style></head>
+	
+
+	
+	
+<body>
+	<div id="main">
+		<header id="header">
+
+
+			<nav id="navbar">
+				<a href="Tyler Game Page.html" class="link">
+					<p>Tyler's Game</p>
+				</a>
+				
+				<a href="Team Website.html" class="logo"><img class="logo" src="images/Logo.png" alt="Bronto Burts Logo"></a>
+
+				<a href="Dylan Game Page.html" class="link">
+					<p>Dylan's Game</p>
+				</a>
+			</nav>
+			
+		</header>
+		
+		<div id="game">
+			<embed id="game-display" src="games/pocketHealer.swf" />
+			
+			<center>
+				<p>Tyler's game is a healing simulator. Use your abilities to heal your teammates while they take down bosses!</p>
+				<p>Pocket Healer was my first game. It's buggy and crashes every once and a while.</p>
+				<p>Have fun!</p>
+			</center>
+
+		</div>
+
+		<footer id="footer">
+			<p>©2019 Bronto Burts</p>
+		</footer>
+	</div>
+
+
+</body></html>
