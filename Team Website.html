@@ -19,7 +19,7 @@
 	  	background-color: white;
 	  	border-radius: 0px 0px 20px 20px;
 		box-shadow: 15px 15px rgba(0,0,0,0.1);
-		z-index: 999;
+		z-index: 10;
 	}
 	
 	.logo {
@@ -55,7 +55,6 @@
 	#bios {
 		positon: absolute;
 		width: 60%;
-		margin: 12% auto 0px;
 		display: flex;
 		justify-content: space-between;
 		animation-name: bios-animation;
@@ -66,12 +65,12 @@
 	.bio {
 		display:flex;
 		flex-direction: column;
-		width: 40%;
+		width: 400px;
 	}
 
 	.bio-image {
-		height: 400px;
-		background-color: white;
+		width: 400px;
+		height: auto;
 		z-index: 3;
 	}
 	
@@ -89,8 +88,10 @@
 	}
 	
 	.bio-description {
+		height: 150px;
 		font-size: 20px;
-		padding: 10px;
+		line-height: 30px;
+		padding: 0px;
 		background-color: #cccccc;
 		color: #3F3F3F;
 		animation-name: bios-description-animation;
@@ -116,12 +117,12 @@
 	
 	@keyframes bios-animation {
 		0%, 10% {
-			margin: 10% auto 0px;
+			margin: 9% auto 0px;
 			opacity: 0;
 		}
 		
 		100% {
-			margin: 12% auto 0px;
+			margin: 11% auto 0px;
 			opacity: 1;
 		}
 	}
@@ -133,7 +134,7 @@
 		}
 		
 		100% {
-			margin-top: 0px;
+			margin-top: -10px;
 			opacity: 1;
 		}
 	}
@@ -178,27 +179,27 @@
 			
 			<div class="bio">
 
-				<div class="bio-image">
-					<p>Image goes here</p>
+				<div>
+					<img class="bio-image" src="images/Dylan.jpg" alt="Image of Dylan"/>
 				</div>				
 				<div class="bio-name">
 					<h2>Dylan Burry</h2>
 				</div>
 				<div class="bio-description">
-					<ul><li>Description goes here</li><li>Description goes here</li><li>Description goes here</li></ul>
+					<ul><li>Favorite Game: Xenoblade Chronicles 2</li><li>Hobbies: Yo-yos, Mechanical Keyboards</li><li>Favorite Animal: Clownfish</li></ul>
 				</div>
 			</div>
 			
 			<div class="bio">
 
-				<div class="bio-image">
-					<p>Image goes here</p>
+				<div>
+					<img class="bio-image" src="images/Tyler.jpg" alt="Image of Tyler"/>
 				</div>				
 				<div class="bio-name">
 					<h2>Tyler Schneider</h2>
 				</div>
 				<div class="bio-description">
-					<ul><li>Description goes here</li><li>Description goes here</li><li>Description goes here</li></ul>
+					<ul><li>Favorite Game: Donkey Kong Country: Tropical Freeze</li><li>Hobbies: Drawing, Programming</li><li>Favorite Animal: Snow Leopard</li></ul>
 				</div>
 			</div>
 			
