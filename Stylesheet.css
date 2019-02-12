@@ -50,6 +50,7 @@
 	#bios {
 		positon: absolute;
 		width: 60%;
+		margin: 9% auto 0px;	
 		display: flex;
 		justify-content: space-between;
 		animation-name: bios-animation;
