@@ -1,3 +1,5 @@
+
+
 	body {
 	  	padding: 0px;
 	  	margin: 0px;  
@@ -6,15 +8,7 @@
 	}
 
 	#header {
-	 	position: fixed;
-	 	top: -15px;
-	  	width: 80%;
-		margin: auto 10%;
-		padding: auto 10%;
-	  	background-color: white;
-	  	border-radius: 0px 0px 20px 20px;
-		box-shadow: 15px 15px rgba(0,0,0,0.1);
-		z-index: 10;
+
 	}
 	
 	.logo {
@@ -23,34 +17,19 @@
 		color: #ffcae0
 	}
 	
-	#navbar {
-		display: flex;
-		flex-direction: rows;
-		justify-content: space-between;
-	}
-	
-	.link {
-		border-left: 3px solid #DBDBDB;
-		border-right: 3px solid #DBDBDB;
-		padding: 30px;
-		margin: auto;
-		width: 20%;
-		text-align: center;
-		font-size: 30px;
-		color: #DBDBDB;
-		text-decoration: none;
-	}
-	
-	.link:hover {
-		background-color: #DBDBDB;
-		color: white;
-		border-color: #cccccc;
+	nav {
+		display:fixed;
+		top: -15px;
+		box-shadow: 15px 15px rgba(0,0,0,0.1);
+		margin: auto 10%;
+		padding: auto 10%;
+		height: 70px;
 	}
 	
 	#bios {
 		positon: absolute;
 		width: 60%;
-		margin: 9% auto 0px;	
+		margin: 5% auto 0px;	
 		display: flex;
 		justify-content: space-between;
 		animation-name: bios-animation;
