@@ -1,11 +1,9 @@
-
-
-	body {
-	  	padding: 0px;
-	  	margin: 0px;  
+body {
+		  	padding: 0px;
+	  	margin: 0px;
 	  	background-color: #ffcae0;
 		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	}
+}
 	
 	nav {
 		top: -15px;
@@ -68,15 +66,18 @@
 		animation-fill-mode: forwards;
 		z-index: 1;
 	}
+
+	#content {
+	  display: flex;
+	  min-height: 100vh;
+	  flex-direction: column;
+	  justify-content: space-between
+	}
 	
 	#footer {
-		width: 100%;
-		height: 40px;
 		background-color: #FF9696;
 		text-align: center;
 		font-weight: bold;
-		bottom: 0px;
-		left: 0px;
 		color: #ffcae0;
 	}
 
@@ -84,7 +85,7 @@
 		display: flex;
 		width: 896px;
 		height: 504px;
-		border: 10px solid #DBDBDB;
+		border: 10px solid #ccc;
 		border-radius: 10px;
 	}
 
@@ -99,16 +100,28 @@
 		margin-bottom: 4%;
 	}
 	
-	#page-bio {
+	#bio-page-container {
 		width: 70%;
 		display: block;
 		color: #3f3f3f;
 		margin: 9% auto 0px;
 		background-color: #ccc;
-		border-radius: 10px 10px 0px 0px;
-		padding: 20px;
 		margin-bottom: 4%;
 	}
+
+#bio-page-name {
+		background-color: #DBDBDB;
+		text-align: center;
+		font-size: 25px;
+		color: #3F3F3F;
+	width: 100%;
+	margin: 0;
+	padding: 10px;
+}
+
+#bio-page-bio {
+	padding: 20px;
+}
 
 	@keyframes bios-animation {
 		0%, 10% {
